@@ -1,0 +1,41 @@
+ShortCutter - a program to manage shortcuts
+
+lines are stored in a text file, for portability
+shortcut,path
+
+Shortcuts MUST NOT have spaces
+Shortcuts MAY NOT use any characters other than 0-9,A-Z,a-z
+Shortcut letter case will be ignored
+Any spaces after the shortcut, WILL be ignored
+A single comma separator MUST be present
+Any spaces immediately after the comma, WILL be ignored
+Paths MAY have spaces, and contine to the end of line
+
+As of now, there are no comment markers, etc.
+
+There MUST NOT be be duplicate shortcuts
+
+
+
+Based on this bit of conversation
+
+
+Ward, ??? PM
+I 'navigate' to a folder on my PC about .0001 times as much as most people.   Why?  Because I run (launch, etc) from kedit, and use named directories extensively.   Alt-G even clears the command line and says 
+go<space> 
+
+mc,C:\Ward\Mike\Chats\
+
+Can you write a program launched from an icon in the tray?  
+
+I was going to write one.   When you have clicked "download" on something, and you want to put it in <somehwere>   you'd click this icon and it would ask for the "friendly name" or "short name" of the directory, say, mike chats, which is "mc".   When you type mc and hit enter, it looks up and clipboards C:\Ward\Mike\Chats\
+
+I just can't IMAGINE getting along without named directories. 
+
+11:51 PM
+I'm fairly certain shortcuts to exe files are trivial
+windows gui apps are a breeze with Lazarus
+putting stuff in the clipboard should be easy
+
+Ward, 11:52 PM
+Another way would be to have a shortcut key like ctrl-alt-N to pop open a message window asking for the name of the directory.  mc<enter> poof, you'r directory is clipped. 

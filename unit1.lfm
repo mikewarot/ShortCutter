@@ -1,0 +1,30 @@
+object Form1: TForm1
+  Left = 3736
+  Height = 518
+  Top = 212
+  Width = 682
+  Caption = 'Form1'
+  DesignTimePPI = 144
+  Menu = MainMenu1
+  OnCreate = FormCreate
+  LCLVersion = '2.0.12.0'
+  object MainMenu1: TMainMenu
+    Left = 53
+    Top = 30
+    object FileMenu: TMenuItem
+      Caption = '&File'
+      OnClick = FileMenuClick
+      object MenuItem4: TMenuItem
+        Caption = 'E&xit'
+        OnClick = MenuItem4Click
+      end
+    end
+    object HelpMenu: TMenuItem
+      Caption = '&Help'
+      object MenuItem3: TMenuItem
+        Caption = '&About ShortCutter'
+        ShortCut = 112
+      end
+    end
+  end
+end
