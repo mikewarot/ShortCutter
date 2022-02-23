@@ -5,7 +5,7 @@ unit unit1;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, Menus;
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, Menus, Unit2;
 
 type
 
@@ -19,6 +19,7 @@ type
     MenuItem4: TMenuItem;
     procedure FormCreate(Sender: TObject);
     procedure FileMenuClick(Sender: TObject);
+    procedure MenuItem3Click(Sender: TObject);
     procedure MenuItem4Click(Sender: TObject);
   private
 
@@ -43,6 +44,12 @@ end;
 procedure TForm1.FileMenuClick(Sender: TObject);
 begin
 
+end;
+
+procedure TForm1.MenuItem3Click(Sender: TObject);
+begin
+ // ShowMessage('ShortCutter v0.001 - A program to manage Shortcuts to folders');
+ FormAbout.ShowModal;
 end;
 
 procedure TForm1.MenuItem4Click(Sender: TObject);

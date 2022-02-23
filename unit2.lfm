@@ -1,0 +1,43 @@
+object FormAbout: TFormAbout
+  Left = 4152
+  Height = 506
+  Top = 312
+  Width = 625
+  Caption = 'About ShortCuutter'
+  ClientHeight = 506
+  ClientWidth = 625
+  DesignTimePPI = 144
+  PopupMode = pmExplicit
+  PopupParent = Form1.Owner
+  LCLVersion = '2.0.12.0'
+  object Button1: TButton
+    Left = 272
+    Height = 38
+    Top = 432
+    Width = 113
+    Caption = 'Ok'
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+  object Memo1: TMemo
+    Left = 21
+    Height = 383
+    Top = 26
+    Width = 569
+    Lines.Strings = (
+      'ShortCutter - v 0.001'
+      ''
+      'This is a utility to manage and use a text file containing a number of shortuts.'
+      ''
+      'Shortcuts are of the form'
+      ''
+      '  nn,C:\folder'
+      ''
+      'Code available at : https://github.com/mikewarot/ShortCutter'
+    )
+    OnChange = Memo1Change
+    ReadOnly = True
+    ScrollBars = ssAutoBoth
+    TabOrder = 1
+  end
+end

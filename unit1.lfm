@@ -24,6 +24,7 @@ object Form1: TForm1
       object MenuItem3: TMenuItem
         Caption = '&About ShortCutter'
         ShortCut = 112
+        OnClick = MenuItem3Click
       end
     end
   end
